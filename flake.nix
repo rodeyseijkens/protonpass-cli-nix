@@ -13,24 +13,24 @@
     forAllSystems = nixpkgs.lib.genAttrs supportedSystems;
     nixpkgsFor = forAllSystems (system: import nixpkgs {inherit system;});
 
-    version = "1.3.0";
+    version = "1.3.2";
 
     sources = {
       x86_64-linux = {
         url = "https://proton.me/download/pass-cli/${version}/pass-cli-linux-x86_64";
-        hash = "sha256-dL0MJ2I2DMC3sb8e3VxDBIIY/zbugn7GwUf/U5RuqiM=";
+        hash = "sha256-X7FK1t0+SuBGgSsBuhYUCkcR8LtCQMjbplo5B1LSuh0=";
       };
       aarch64-linux = {
         url = "https://proton.me/download/pass-cli/${version}/pass-cli-linux-aarch64";
-        hash = "sha256-8/viXzFGZukk+KHbBMJ+NUPB0u+RmDfE6o6WE1E8Xnk=";
+        hash = "sha256-w5mwbYQgqAU07T4+vUaYkcVp8XtMFNynGTV3jJQjAFw=";
       };
       x86_64-darwin = {
         url = "https://proton.me/download/pass-cli/${version}/pass-cli-macos-x86_64";
-        hash = "sha256-ov5nQReFebN1B29d0trSHwnSQo396BPaWK0gIE2rnX4=";
+        hash = "sha256-VmkTLyHNZ8p8wgvzHOYiQsbDTjzKsjyGDShcQZlAH7A=";
       };
       aarch64-darwin = {
         url = "https://proton.me/download/pass-cli/${version}/pass-cli-macos-aarch64";
-        hash = "sha256-q2ZevIc3/4XI0ndkEauq54NXnhPqlGI1Fdm8kcJ84Wo=";
+        hash = "sha256-B+hmxagP5Ls+Jc8DZN8Y9fvdrTq+HkMICUzMVsd8aU4=";
       };
     };
   in {
